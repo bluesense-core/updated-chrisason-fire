@@ -1,0 +1,54 @@
+#contact .contact-map .mapouter {
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 100%;
+}
+
+#contact .contact-map .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 100%;
+}
+
+#contact .contact-form {
+    padding: 5em 0;
+}
+
+#contact .contact-form h2 {
+    font-weight: 600;
+    margin-bottom: 0.7em;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea,
+#contact .contact-form button {
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact .contact-form textarea {
+    height: 205px;
+}
+
+#contact .contact-form button {
+    border-radius: 40px;
+    color: #000;
+}
+
+#contact .contact-form .button-icon {
+    margin-bottom: 3px;
+}
+
+#contact .contact-details h2 {
+    font-weight: 600;
+}
+
+#contact .contact-details p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+}

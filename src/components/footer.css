@@ -1,0 +1,53 @@
+#footer .grey-banner {
+    background-color: #efefef;
+}
+
+#footer .grey-banner h6 {
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#footer p {
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+#footer .logo-banner img {
+    width: 12%;
+}
+
+#footer .red-banner {
+    background-color: #981914;
+    color: #fff;
+}
+
+#footer .red-banner p {
+    font-size: 0.875rem;
+}
+
+#footer .social {
+    width: 70px;
+}
+
+@media (max-width: 768px) {
+    #footer .grey-banner h6,
+    #footer p {
+        font-size: 0.95rem;
+    }
+
+    #footer .red-banner p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #footer .grey-banner h6,
+    #footer p {
+        font-size: 0.8rem;
+    }
+
+    #footer .red-banner p {
+        font-size: 0.7rem;
+    }
+}
