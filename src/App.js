@@ -9,6 +9,7 @@ import Products from './ui/Products';
 import Home from './ui/Home';
 import Company from './ui/Company';
 import Operations from './ui/Operations';
+import Media from './ui/Media';
 function App() {
     return (
         <div>
@@ -20,6 +21,7 @@ function App() {
                     <Route path='about' element={<Company />} />
                     <Route path='operations' element={<Operations />} />
                     <Route path='products' element={<Products />} />
+                    <Route path='media' element={<Media />} />
                     <Route path='contact' element={<Contact />} />
                 </Routes>
 

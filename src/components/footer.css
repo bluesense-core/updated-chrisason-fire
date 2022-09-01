@@ -1,53 +1,84 @@
-#footer .grey-banner {
-    background-color: #efefef;
+#footer {
+    border-top: 1px solid rgb(201, 201, 201);
 }
 
-#footer .grey-banner h6 {
-    line-height: 1.1;
-    font-weight: 600;
-    margin-bottom: 0;
+#footer .social-banner a {
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: #c7c2c2;
+    color: #fff;
+    transition: 0.5s;
+}
+#footer .social-banner a:hover {
+    background-color: #f2050e;
+}
+
+#footer .social-icon {
+    font-size: 1.5rem;
 }
 
 #footer p {
-    line-height: 1.1;
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 300;
     margin-bottom: 0;
 }
 
 #footer .logo-banner img {
-    width: 12%;
+    width: 8%;
 }
 
-#footer .red-banner {
-    background-color: #981914;
-    color: #fff;
+#footer .logo-banner img:nth-of-type(4),
+#footer .logo-banner img:nth-of-type(7),
+#footer .logo-banner img:nth-of-type(8) {
+    width: 5%;
 }
 
-#footer .red-banner p {
-    font-size: 0.875rem;
+#footer .logo-banner img:nth-of-type(6) {
+    width: 4%;
 }
 
-#footer .social {
-    width: 70px;
+#footer .black-banner {
+    background-color: #000;
 }
 
-@media (max-width: 768px) {
-    #footer .grey-banner h6,
-    #footer p {
-        font-size: 0.95rem;
+#footer .img-div {
+    width: 75%;
+}
+
+@media (max-width: 992px) {
+    #footer .logo-banner img {
+        width: 10%;
     }
 
-    #footer .red-banner p {
-        font-size: 0.75rem;
+    #footer .logo-banner img:nth-of-type(4),
+    #footer .logo-banner img:nth-of-type(7),
+    #footer .logo-banner img:nth-of-type(8) {
+        width: 6%;
+    }
+
+    #footer .logo-banner img:nth-of-type(6) {
+        width: 5%;
     }
 }
 
 @media (max-width: 576px) {
-    #footer .grey-banner h6,
-    #footer p {
-        font-size: 0.8rem;
+    #footer .logo-banner img {
+        width: 12%;
     }
 
-    #footer .red-banner p {
-        font-size: 0.7rem;
+    #footer .logo-banner img:nth-of-type(4),
+    #footer .logo-banner img:nth-of-type(7),
+    #footer .logo-banner img:nth-of-type(8) {
+        width: 7%;
+    }
+
+    #footer .logo-banner img:nth-of-type(6) {
+        width: 6%;
+    }
+
+    #footer .img-div {
+        width: 100%;
     }
 }

@@ -1,263 +1,203 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import './home.css';
-import herohome from '../images/herohome.png';
-import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import notore from '../images/notore.png';
-import ge from '../images/ge.png';
-import ffs from '../images/ffs.png';
-import feasr from '../images/feasr.png';
-import nnpc from '../images/nnpc.png';
-import mede from '../images/mede.png';
-import goaks from '../images/goaks.png';
-import exxonmobil from '../images/exxonmobil.png';
-import gofs from '../images/gofs.png';
-import uniuyo from '../images/uniuyo.png';
-import shell from '../images/shell.png';
-import icrc from '../images/icrc.png';
-import fgn from '../images/fgn.png';
-import eni from '../images/eni.png';
-import chevron from '../images/chevron.png';
-import total from '../images/total.png';
-import img1 from '../images/img1.png';
-import img2 from '../images/img2.png';
-import img3 from '../images/img3.png';
-import pro1 from '../images/process1.svg';
-import pro2 from '../images/process2.svg';
-import pro3 from '../images/process3.svg';
-import pro4 from '../images/process4.svg';
-import fireengineering from '../images/fireengineering.png';
-import marineengineering from '../images/marineengineering.png';
-import fireinstallations from '../images/fireinstallations.png';
+import img1 from '../images/home-img/img1.png';
+import img2 from '../images/home-img/img2.png';
+import img3 from '../images/home-img/img3.png';
+import chevron from '../images/home-img/chevron.png';
+import eni from '../images/home-img/eni.png';
+import exxonmobil from '../images/home-img/exxonmobil.png';
+import ffs from '../images/home-img/ffs.png';
+import fgn from '../images/home-img/fgn.png';
+import ge from '../images/home-img/ge.png';
+import goaks from '../images/home-img/goaks.png';
+import gofs from '../images/home-img/gofs.png';
+import icrc from '../images/home-img/icrc.png';
+import indorama from '../images/home-img/indorama.png';
+import mede from '../images/home-img/mede.png';
+import nb from '../images/home-img/nb.png';
+import nnpc from '../images/home-img/nnpc.png';
+import notore from '../images/home-img/notore.png';
+import shell from '../images/home-img/shell.png';
+import total from '../images/home-img/total.png';
+import fireeng from '../images/home-img/fireengineering.png';
+import marineeng from '../images/home-img/marineengineering.png';
+import fireinstall from '../images/home-img/fireinstallations.png';
 
 export default function Home() {
     return (
-        <main>
-            <div className='hero-img'>
-                <img src={herohome} alt='Homepage'></img>
-                <div className='hero-text'>
-                    <h1>Over ​260,000hours expertising in Fire Engineering</h1>
-                    <p>
-                        Since 1987 we have been providing Africa with easy
-                        access to safety technology
-                    </p>
-                </div>
-            </div>
+        <main id='home'>
+            <section className=' home-hero d-flex flex-column align-items-center justify-content-center py-5 px-lg-0 px-3'>
+                <h1 className='mb-0 text-center'>
+                    Over <b>​260,000hours</b> expertising in Fire Engineering
+                </h1>
+                <p className='fs-5 text-center'>
+                    Since 1987 we have been providing Africa with easy access to
+                    safety technology
+                </p>
+            </section>
 
-            <div className='content'>
-                <div className='img-slider'>
-                    <CarouselProvider
-                        className='case-slide'
-                        isIntrinsicHeight={true}
-                        dragEnabled={true}
-                        touchEnabled={true}
-                        totalSlides={3}
-                        interval={3000}
-                        isPlaying={true}
-                        infinite={true}>
-                        <Slider className='slider-class' moveThreshold={0}>
-                            <Slide index={0}>
-                                <img
-                                    src={img1}
-                                    alt='slide1'
-                                    className='slideimg'></img>
-                            </Slide>
-                            <Slide index={1}>
+            <section className='home-services '>
+                <Container>
+                    <div className='service1 py-5 d-flex flex-lg-row flex-column justify-content-between align-items-stretch'>
+                        <img
+                            src={img1}
+                            alt=''
+                            className='main-service-img m-lg-0 mb-5'
+                        />
+
+                        <div className='service1-details'>
+                            <div className='d-flex justify-content-center align-items-start'>
                                 <img
                                     src={img2}
-                                    alt='slide2'
-                                    className='slideimg'></img>
-                            </Slide>
-                            <Slide index={2}>
+                                    alt=''
+                                    className='service-img'
+                                />
+
+                                <div className='ms-4'>
+                                    <h2 className='h4'>Research & Analysis</h2>
+                                    <p className='lh-sm'>
+                                        All our projects undergo research and
+                                        analysis. Research is what allows our
+                                        experts know exactly how to best meet
+                                        your safety challenges.{' '}
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='d-flex justify-content-center align-items-start mt-4'>
                                 <img
                                     src={img3}
-                                    alt='slide3'
-                                    className='slideimg'></img>
-                            </Slide>
-                        </Slider>
-                    </CarouselProvider>
-                </div>
-                <div className='case-text'>
-                    <div className='text1'>
-                        <p className='bold m-0'>Research & Analysis</p>
-                        <p className='m-0'>
-                            All our projects undergo research and analysis.
-                            Research is what allows our experts know exactly how
-                            to best meet your safety challenges.
-                        </p>
-                    </div>
-                    <div className='text2'>
-                        <p className='bold m-0'>Fire Protection Engines</p>
-                        <p className='m-0'>
-                            Fire Apparatus & Engines are a must for any
-                            community that is keen on securing the lives and
-                            properties of its people. We have & can assist in
-                            consulting and supplying your fire engines.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                                    alt=''
+                                    className='service-img'
+                                />
 
-            <div className='process-grid'>
-                <div className='process1'>
-                    <div className='process-img'>
-                        <img src={pro4} alt='25%'></img>
+                                <div className='ms-4'>
+                                    <h2 className='h4'>
+                                        Fire Protection Engines
+                                    </h2>
+                                    <p className='lh-sm'>
+                                        Fire Apparatus & Engines are a must for
+                                        any community that is keen on securing
+                                        the lives and properties of its people.
+                                        We have & can assist in consulting and
+                                        supplying your fire engines.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='process-title'>Consult</div>
-                    <div className='process-body'>
-                        <p className='lh-sm'>
-                            The first thing we do is arrange for a convenient
-                            time to discuss your challenges and safety issues.
-                        </p>
-                    </div>
-                </div>
 
-                <div className='process1'>
-                    <div className='process-img'>
-                        <img src={pro3} alt='25%'></img>
-                    </div>
-                    <div className='process-title'>Design</div>
-                    <div className='process-body'>
-                        <p className='lh-sm'>
-                            After consulting with your company, we would then
-                            have to research and analyse your safety challenges.
-                        </p>
-                    </div>
-                </div>
+                    <div className='text-center py-5 service2 d-flex flex-md-row flex-column justify-content-between align-items-start'>
+                        <div className='service'>
+                            <div className='grey-circle mb-3'>
+                                <p>1</p>
+                            </div>
+                            <h5>Consult</h5>
+                            <p className='pt-2 px-2'>
+                                The first thing we do is arrange for a
+                                convenient time to discuss your challenges and
+                                safety issues
+                            </p>
+                        </div>
 
-                <div className='process1'>
-                    <div className='process-img'>
-                        <img src={pro2} alt='25%'></img>
-                    </div>
-                    <div className='process-title'>Supply</div>
-                    <div className='process-body'>
-                        <p className='lh-sm'>
-                            Angus Fire UK & Chubb Fire UK are a few of our
-                            longterm partners we liaise with to procure,
-                            refurbish or manufacture to your specifications.
-                        </p>
-                    </div>
-                </div>
+                        <div className='service'>
+                            <div className='grey-circle mb-3'>
+                                <p>2</p>
+                            </div>
+                            <h5>Design</h5>
+                            <p className='pt-2 px-2'>
+                                After consulting with your company, we would
+                                then have to research and analyse your safety
+                                challenges.
+                            </p>
+                        </div>
 
-                <div className='process1'>
-                    <div className='process-img'>
-                        <img src={pro1} alt='25%'></img>
-                    </div>
-                    <div className='process-title'>Installation</div>
-                    <div className='process-body'>
-                        <p className='lh-sm'>
-                            We have been installing fire alarms, sprinklers,
-                            hosereels, CCTVs and other safety and security
-                            equipment for well over three decades now.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                        <div className='service'>
+                            <div className='grey-circle mb-3'>
+                                <p>3</p>
+                            </div>
+                            <h5>Supply</h5>
+                            <p className='pt-2 px-2'>
+                                Angus Fire UK & Chubb Fire UK are a few of our
+                                longterm partners we liaise with to procure,
+                                refurbish or manufacture to your specifications.{' '}
+                            </p>
+                        </div>
 
-            <div className='logo-flex'>
-                <div className='logo-head'>
-                    <h1 className='fw-bolder fs-3'>Some Clients</h1>
-                </div>
-                <div className='logo-block'>
-                    <div className='logo'>
-                        <img src={notore} alt=''></img>
+                        <div className='service'>
+                            <div className='grey-circle mb-3'>
+                                <p>4</p>
+                            </div>
+                            <h5>Installation</h5>
+                            <p className='pt-2 px-2'>
+                                We have been installing fire alarms, sprinklers,
+                                hosereels, CCTVs and other safety and security
+                                equipment for well over three decades now.{' '}
+                            </p>
+                        </div>
                     </div>
-                    <div className='logo'>
-                        <img src={ge} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={ffs} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={feasr} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={nnpc} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={mede} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={goaks} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={exxonmobil} alt=''></img>
-                    </div>
-                </div>
-                <div className='logo-block'>
-                    <div className='logo'>
-                        <img src={gofs} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={uniuyo} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={shell} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={icrc} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={fgn} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={eni} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={chevron} alt=''></img>
-                    </div>
-                    <div className='logo'>
-                        <img src={total} alt=''></img>
-                    </div>
-                </div>
-            </div>
+                </Container>
+            </section>
 
-            <div className='card-heading'>
-                <h1 className='fw-bolder fs-3'>Services</h1>
-            </div>
-            <div className='card-grid'>
-                <div className='card rounded-4'>
-                    <div className='card-img'>
-                        <img src={fireengineering} alt=''></img>
+            <section className='home-clients pb-5'>
+                <Container>
+                    <h4>Some Clients</h4>
+                    <div className='d-flex justify-content-between align-items-center'>
+                        <img src={chevron} alt='' />
+                        <img src={ge} alt='' />
+                        <img src={shell} alt='' />
+                        <img src={exxonmobil} alt='' />
+                        <img src={total} alt='' />
+                        <img src={eni} alt='' />
+                        <img src={notore} alt='' />
+                        <img src={indorama} alt='' />
                     </div>
-                    <div className='card-text'>
-                        <p className='ptitle'>Fire Engineering</p>
-                        <p className='mb-0 lh-sm'>
+
+                    <div className='d-flex justify-content-between align-items-center'>
+                        <img src={icrc} alt='' />
+                        <img src={mede} alt='' />
+                        <img src={fgn} alt='' />
+                        <img src={nnpc} alt='' />
+                        <img src={gofs} alt='' />
+                        <img src={goaks} alt='' />
+                        <img src={nb} alt='' />
+                        <img src={ffs} alt='' />
+                    </div>
+                </Container>
+            </section>
+
+            <section className='dark-bg'>
+                <Container className='d-flex py-5 flex-md-row flex-column justify-content-between align-items-center'>
+                    <div className='fire-card mb-4'>
+                        <img src={fireeng} alt='' />
+                        <h4 className='my-2'>Fire Engineering</h4>
+                        <p className='px-2'>
+                            {' '}
                             Improving the safety of your employees and assets is
                             our main priority; allowing you to focus on other
                             critical aspects of your firm
                         </p>
                     </div>
-                </div>
-
-                <div className='card rounded-4'>
-                    <div className='card-img'>
-                        <img src={marineengineering} alt=''></img>
-                    </div>
-                    <div className='card-text'>
-                        <p className='ptitle'>Marine Engineering</p>
-                        <p className='mb-0 lh-sm'>
-                            Improving the safety of your employees and assets is
-                            our main priority; allowing you to focus on other
-                            critical aspects of your firm
+                    <div className='fire-card mb-4'>
+                        <img src={marineeng} alt='' />
+                        <h4 className='my-2'>Marine Engineering</h4>
+                        <p className='px-2'>
+                            Marine engineering often cost millions to acquire.
+                            Which is why it is important companies invest in
+                            protecting these assets.
                         </p>
                     </div>
-                </div>
-
-                <div className='card rounded-4'>
-                    <div className='card-img'>
-                        <img src={fireinstallations} alt=''></img>
-                    </div>
-                    <div className='card-text'>
-                        <p className='ptitle'>Fire Installation</p>
-                        <p className='mb-0 lh-sm'>
-                            Improving the safety of your employees and assets is
-                            our main priority; allowing you to focus on other
-                            critical aspects of your firm
+                    <div className='fire-card mb-4'>
+                        <img src={fireinstall} alt='' />
+                        <h4 className='my-2'>Fire Installations</h4>
+                        <p className='px-2'>
+                            We have consulted Shell, NNPC, Mobil, TotalElf and a
+                            few other IOCs with fire protection procurement and
+                            installations
                         </p>
                     </div>
-                </div>
-            </div>
+                </Container>
+            </section>
         </main>
     );
 }

@@ -2,32 +2,34 @@
     position: relative;
 }
 #header h1 {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
+    font-weight: 600;
+    color: #969696;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#header .navbar-logo {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.075);
-    z-index: 1000;
-    position: relative;
+#header .header-logo {
+    margin-left: 10em;
+    width: 22%;
+}
+
+#header hr {
+    color: rgb(201, 201, 201);
 }
 
 #header .navbar {
     background: #fff;
-    font-size: 1.15vw;
-    opacity: 0.87;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    height: 80px;
+    font-size: 0.95rem;
 }
 
 #header-nav a {
     color: #000;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.6rem;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    transition: background-color 1s ease-in-out, border 1s ease-in-out;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 #header .nav-item {
@@ -35,22 +37,13 @@
 }
 
 #header-nav a.active {
-    border-bottom: 1px solid red;
+    border-bottom: 5px solid red;
 }
 
-#header .nav-item:hover:after {
-    background: red;
-    width: 100%;
+#header a:hover {
+    background: #c7c2c2;
+    color: #fff;
 }
-#header .nav-item:after {
-    background: 0 0;
-    content: '';
-    display: block;
-    height: 1px;
-    transition: width 0.7s ease, background-color 0.5s ease;
-    width: 0;
-}
-
 #header .navbar button {
     border: none;
 }
@@ -61,8 +54,11 @@
 }
 
 @media (max-width: 992px) {
+    #header .header-logo {
+        margin-left: 0em;
+    }
+
     #header .navbar-logo {
-        box-shadow: none;
         margin: 0 auto;
     }
 
@@ -87,6 +83,6 @@
     }
 
     #header .navbar-logo img {
-        width: 80%;
+        width: 50%;
     }
 }

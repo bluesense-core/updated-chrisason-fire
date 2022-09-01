@@ -8,7 +8,8 @@ import {
     Button,
 } from 'react-bootstrap';
 import './contact.css';
-import { FaCaretRight } from 'react-icons/fa';
+import ContactImg from '../images/contact-img.png';
+import { FaCaretRight, FaTelegram, FaTelegramPlane } from 'react-icons/fa';
 export default function Contact() {
     const [validated, setValidated] = useState(false);
 
@@ -22,13 +23,13 @@ export default function Contact() {
         setValidated(true);
     };
     return (
-        <main id='contact'>
-            <section className='contact-map'>
+        <main id='contact' className='"position-relative'>
+            <section className='contact-map "position-relative'>
                 <div className='mapouter'>
                     <div className='gmap_canvas'>
                         <iframe
                             width='100%'
-                            height='400'
+                            height='300'
                             id='gmap_canvas'
                             src='https://maps.google.com/maps?q=98%20Ikwerre%20Road.%20Port%20Harcourt.%20Rivers%20State.%20Nigeria.&t=&z=13&ie=UTF8&iwloc=&output=embed'
                             frameborder='0'
@@ -38,86 +39,96 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
+            <section className='position-relative'>
+                <Container className='d-flex flex-md-row flex-column justify-content-center align-items-md-start align-items-center'>
+                    <div className='banner d-flex flex-column justify-content-between'>
+                        <p>Find Us</p>
+                        <div className='bg-border'></div>
+                    </div>
 
-            <section className='contact-form pb-5'>
-                <Container className='px-5'>
-                    <h2>Connect with us</h2>
-                    <Form
-                        noValidate
-                        validated={validated}
-                        onSubmit={handleSubmit}>
-                        <Row className='flex-md-row flex-column'>
-                            <Col>
-                                <FloatingLabel label='Name' className='mb-3'>
-                                    <Form.Control
-                                        type='text'
-                                        placeholder='Name'
-                                        required
-                                    />
-                                    <Form.Control.Feedback type='invalid'>
-                                        Name is required!
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
-                                <FloatingLabel label='Email' className='mb-3'>
-                                    <Form.Control
-                                        type='email'
-                                        placeholder='Email'
-                                        required
-                                    />
-                                    <Form.Control.Feedback type='invalid'>
-                                        Email is required!
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
-                                <FloatingLabel label='Phone' className='mb-3'>
-                                    <Form.Control
-                                        type='tel'
-                                        placeholder='Phone'
-                                        required
-                                    />
-                                    <Form.Control.Feedback type='invalid'>
-                                        Phone is required!
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
-                            </Col>
-                            <Col className='d-flex flex-column'>
-                                <FloatingLabel
-                                    controlId='floatingTextarea'
-                                    label='Message'
-                                    className='mb-3'>
-                                    <Form.Control
-                                        as='textarea'
-                                        placeholder='Message'
-                                        required
-                                    />
-                                    <Form.Control.Feedback type='invalid'>
-                                        Kindly input your message here
-                                    </Form.Control.Feedback>
-                                </FloatingLabel>
+                    <div className='ms-3 pt-3'>
+                        <div className='contact-details'>
+                            <p className='touch'>Get in touch..</p>
 
-                                <div className='align-self-end'>
-                                    <Button
-                                        type='submit'
-                                        className=' mt-3 py-2 px-4'>
-                                        Submit{' '}
-                                        <FaCaretRight className='button-icon' />{' '}
-                                    </Button>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Form>
-                </Container>
-            </section>
+                            <p className='mb-1'>
+                                <strong>
+                                    HQ: Chrisason Fire Protection Limited.
+                                </strong>
+                            </p>
+                            <p className='mb-1'>
+                                98 Ikwerre Road. Port Harcourt.
+                            </p>
+                            <p className='mb-1'>Rivers State. Nigeria.</p>
+                            <p className='mb-1'>E: info@chrisasonfire.com</p>
+                            <p className='mb-1'>​M: +234 (0) 803 335 6 183</p>
+                            <p className='mb-1'>M: +234 (0) 806 578 4 615</p>
+                        </div>
 
-            <section className='contact-details pb-5'>
-                <Container className='px-5'>
-                    <h2>Find us</h2>
-                    <p>
-                        HQ: Chrisason Fire Protection Limited. <br /> 98 Ikwerre
-                        Road. Port Harcourt. <br /> Rivers State. Nigeria.{' '}
-                        <br /> E: info@chrisasonfire.com <br />
-                        M: +234 (0) 806 578 4 615 <br /> ​M: +234 (0) 803 335 6
-                        183
-                    </p>
+                        <div className='contact-form  py-3'>
+                            <Form
+                                noValidate
+                                validated={validated}
+                                onSubmit={handleSubmit}>
+                                <Row className='flex-md-row flex-column'>
+                                    <Col>
+                                        <Form.Group className='mb-2'>
+                                            <Form.Label>Name</Form.Label>
+                                            <Form.Control
+                                                size='lg'
+                                                type='text'
+                                                required
+                                            />
+                                            <Form.Control.Feedback type='invalid'>
+                                                Name is required!
+                                            </Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group className='mb-2'>
+                                            <Form.Label>Email</Form.Label>
+                                            <Form.Control
+                                                size='lg'
+                                                type='email'
+                                                required
+                                            />
+                                            <Form.Control.Feedback type='invalid'>
+                                                Email is required!
+                                            </Form.Control.Feedback>
+                                        </Form.Group>
+                                        <Form.Group>
+                                            <Form.Label>Phone</Form.Label>
+                                            <Form.Control
+                                                size='lg'
+                                                type='tel'
+                                                required
+                                            />
+                                            <Form.Control.Feedback type='invalid'>
+                                                Phone is required!
+                                            </Form.Control.Feedback>
+                                        </Form.Group>
+                                    </Col>
+                                    <Col className='d-flex flex-column'>
+                                        <Form.Group>
+                                            <Form.Label>Message</Form.Label>
+                                            <Form.Control
+                                                as='textarea'
+                                                required
+                                            />
+                                            <Form.Control.Feedback type='invalid'>
+                                                Kindly input your message here
+                                            </Form.Control.Feedback>
+                                        </Form.Group>
+
+                                        <div className='align-self-end'>
+                                            <Button
+                                                type='submit'
+                                                className=' mt-3 '>
+                                                <FaTelegramPlane className='button-icon' />{' '}
+                                            </Button>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </Form>
+                        </div>
+                    </div>
                 </Container>
             </section>
         </main>
