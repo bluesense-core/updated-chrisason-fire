@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './header.css';
-import Logo from '../images/download.webp';
+import Logo from '../images/download.png';
 import { NavLink } from 'react-router-dom';
 import { Container, Image, Navbar, Offcanvas, Nav } from 'react-bootstrap';
 

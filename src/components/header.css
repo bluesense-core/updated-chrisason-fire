@@ -9,7 +9,8 @@
 
 #header .header-logo {
     margin-left: 10em;
-    width: 22%;
+    width: 30%;
+    object-fit: cover;
 }
 
 #header hr {
@@ -83,6 +84,7 @@
     }
 
     #header .navbar-logo img {
-        width: 50%;
+        width: 75%;
+        object-fit: cover;
     }
 }
