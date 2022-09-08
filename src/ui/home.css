@@ -104,7 +104,7 @@
     background-color: rgb(232, 27, 27);
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
     #home .service2 .service {
         width: 100%;
     }
