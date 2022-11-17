@@ -13,6 +13,8 @@ import pro9 from '../images/product-img/pro9.png';
 import pro10 from '../images/product-img/pro10.png';
 import pro11 from '../images/product-img/pro11.png';
 import pro12 from '../images/product-img/pro12.png';
+import circle1 from '../images/product-img/circle1.png';
+import circle2 from '../images/product-img/circle2.png';
 
 export default function Products() {
     return (
@@ -215,6 +217,73 @@ export default function Products() {
             </section>
 
             <section className='pro-banner'></section>
+
+            <section className='fabrication py-5 '>
+                <Container>
+                    <div className='fab-sect1 pb-5  d-flex flex-lg-row flex-column justify-content-center align-items-center'>
+                        <div className='fab-circles m-lg-0 mb-4 position-relative '>
+                            <img
+                                src={circle1}
+                                alt=''
+                                className='circle1 circle'
+                            />
+                            <img
+                                src={circle2}
+                                alt=''
+                                className='circle2 circle'
+                            />
+                        </div>
+
+                        <div className='fab-text pe-lg-5 mt-lg-4 mt-5 ms-xl-0 ms-lg-4'>
+                            <p>
+                                Chrisason Fire is certified BAFE SP103 - The
+                                Inspection, Testing, Refurbishing and Refilling
+                                of Portable Fire Extinguishers and Containers in
+                                conjunction with Fire Extinguishing Equipment.
+                            </p>
+                            <p>
+                                We test and refurbish all portable and wheeled
+                                fire extinguisher. Our team of expert fire
+                                technicians are experienced in overhauling all
+                                portable and wheeled fire extinguishers,
+                                hosereels and other fire prevention equipement.{' '}
+                            </p>
+                            <p>
+                                Fire extinguishers require stringent maintenance
+                                to ensure they will work when needed, and are
+                                more importantly, safe. Fire extinguishers are
+                                pressurised vessels that can explode when
+                                corroded or damaged, and have been know to cause
+                                serious injury and even fatal. ​
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='fab-sect2 pt-lg-5 pt-0 pb-3 d-flex  justify-content-around align-items-stretch flex-md-nowrap flex-wrap'>
+                        <div className='fab-detail'>
+                            <p>Frequent Clients</p>
+                            <div className='red-circle clients'>83%</div>
+                        </div>
+
+                        <div className='fab-detail '>
+                            <p>Key Global Partners</p>
+                            <div className='red-circle partners'>67%</div>
+                        </div>
+
+                        <div className='fab-detail m-md-0 mt-4'>
+                            <p>Referrals</p>
+                            <div className='red-circle referrals'>90%</div>
+                        </div>
+
+                        <div className='fab-detail m-md-0 mt-4'>
+                            <p>Major Complaints</p>
+                            <div className='red-circle complaints'>
+                                <strong>5%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </section>
         </main>
     );
 }

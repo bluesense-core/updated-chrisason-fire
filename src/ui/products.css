@@ -85,3 +85,119 @@
     background-color: rgba(0, 0, 0, 0.534);
     background-blend-mode: lighten;
 }
+
+#products .circle {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#products .circle1 {
+    width: 360px;
+    height: 360px;
+    border: 12px solid #ffff;
+    position: relative;
+    z-index: 1000;
+}
+
+#products .circle2 {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+#products .fab-circles {
+    width: 50%;
+}
+
+#products .fab-text {
+    width: 40%;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    #products .fab-circles,
+    #products .fab-text {
+        width: 100%;
+    }
+
+    #products .circle1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    #products .circle2 {
+        width: 200px;
+        height: 200px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 568px) {
+    #products .circle1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    #products .circle2 {
+        width: 160px;
+        height: 160px;
+        left: 40%;
+    }
+}
+
+#products .fab-detail {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: 'Open Sans';
+}
+
+#products .fab-detail .red-circle {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #000;
+    border-radius: 50%;
+    box-shadow: rgb(204 156 56 / 19%) 3px 3px 6px 0px;
+}
+
+#products .fab-detail .clients {
+    border-color: rgb(216, 57, 75);
+}
+
+#products .fab-detail .partners {
+    border-color: rgb(204, 53, 52);
+}
+
+#products .fab-detail .referrals {
+    border-color: rgb(236, 22, 51);
+}
+
+#products .fab-detail .complaints {
+    border-color: rgb(212, 183, 185);
+}
+
+#products .fab-detail strong {
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    #products .fab-detail {
+        width: 20%;
+    }
+}
+
+@media (max-width: 568px) {
+    #products .fab-detail {
+        width: 50%;
+    }
+}

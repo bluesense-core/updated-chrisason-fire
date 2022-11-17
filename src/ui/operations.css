@@ -8,8 +8,41 @@
     font-weight: 300;
 }
 
+#operations .recent-operations {
+    color: #212529;
+}
+
+#operations .recent-operations img {
+    width: 100%;
+}
+
+#operations .recent-operations h2 {
+    font-family: 'Lato';
+    font-weight: 700;
+    color: #b3b2b2;
+}
+
+#operations .recent-operations .subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+#operations .recent-operations h3,
+#operations .recent-operations p {
+    font-family: 'Lato';
+
+    font-weight: 300;
+}
+
 #operations .operation {
     width: 65%;
+}
+
+#operations .operation h2 {
+    font-family: 'Lato';
+    font-weight: 700;
+    color: #b3b2b2;
 }
 
 #operations aside {
@@ -65,7 +98,7 @@
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
     #operations .operation .op {
         width: 100%;
     }
