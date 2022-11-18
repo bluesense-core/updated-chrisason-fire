@@ -13,19 +13,23 @@
 }
 
 #operations .recent-operations img {
-    width: 100%;
+    width: 450px;
+    height: 250px;
+    margin: auto;
+    /* object-fit: contain; */
 }
 
-#operations .recent-operations h2 {
-    font-family: 'Lato';
-    font-weight: 700;
-    color: #b3b2b2;
+#operations .recent-operations .card-title {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    line-height: 29px;
+    color: #666;
 }
 
-#operations .recent-operations .subtitle {
-    font-family: 'Lato';
-    font-weight: 300;
-    font-size: 1.125rem;
+#operations .recent-operations .card-text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #666;
 }
 
 #operations .recent-operations h3,
@@ -95,6 +99,11 @@
     #operations .operation,
     #operations aside {
         width: 100%;
+    }
+
+    #operations .recent-operations img {
+        width: 100%;
+        height: 100%;
     }
 }
 

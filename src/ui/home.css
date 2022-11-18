@@ -1,16 +1,18 @@
 #home .home-hero {
     height: 400px;
-    background-image: url(../images/home-img/home-hero.png);
+    background: #d1d0d0 url(../images/home-img/home-hero.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50%;
+    background-blend-mode: multiply;
     background-position-y: center;
+    background-position-x: center;
     color: rgb(254, 254, 254);
 }
 
 #home .home-hero h1 {
     font-family: 'Lato';
     font-weight: 300;
-    text-shadow: 0px 0px 0px #000;
+    text-shadow: 0px 0px 5px rgb(131, 131, 131);
 }
 
 #home .home-hero p {
