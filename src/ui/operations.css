@@ -1,11 +1,21 @@
 #operations .op-hero {
-    background-color: rgb(201, 201, 201);
+    height: 400px;
+    background: #e2e2e2 url(../images/operation-img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-blend-mode: multiply;
+    background-position-y: center;
+    background-position-x: center;
     color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #operations .op-hero h1 {
     font-family: 'Lato';
     font-weight: 300;
+    text-shadow: 0px 0px 5px #000;
 }
 
 #operations .recent-operations {
@@ -13,17 +23,20 @@
 }
 
 #operations .recent-operations img {
-    width: 450px;
-    height: 250px;
+    width: 380px;
+    height: 100%;
     margin: auto;
-    /* object-fit: contain; */
+    object-fit: contain;
 }
 
 #operations .recent-operations .card-title {
     font-family: 'Open Sans';
-    font-weight: 500;
+    font-weight: 300;
     line-height: 29px;
-    color: #666;
+    color: #fefefe;
+    background-color: rgb(153, 153, 153);
+    border-radius: 4px;
+    width: fit-content;
 }
 
 #operations .recent-operations .card-text {
@@ -35,8 +48,11 @@
 #operations .recent-operations h3,
 #operations .recent-operations p {
     font-family: 'Lato';
-
     font-weight: 300;
+}
+
+#operations .recent-operations p {
+    font-size: 1rem;
 }
 
 #operations .operation {

@@ -14,7 +14,7 @@ export default function Operations() {
             <section className='op-hero py-3'>
                 <Container>
                     <h1 className='text-center display-3'>
-                        Chrisason Operations & Research
+                        Chrisason Projects & Research
                     </h1>
                 </Container>
             </section>
@@ -22,7 +22,7 @@ export default function Operations() {
             <section className='recent-operations text-center py-5'>
                 <Container>
                     <h2 className='title mb-2 text-uppercase'>
-                        Fire Protection Operations
+                        Fire Protection Projects
                     </h2>
                     <p className='subtitle px-5'>
                         Chrisason Fire takes great care in ensuring that fire
@@ -31,7 +31,10 @@ export default function Operations() {
                         suppression systems which come in different variations
                     </p>
 
-                    <Row xs={1} md={2} className='pt-5 g-5  align-items-center'>
+                    <Row
+                        xs={1}
+                        md={2}
+                        className='pt-5 gx-3 gy-5  align-items-stretch'>
                         {OpCards.map((e) => (
                             <Col key={e.id}>
                                 <Card className='h-100 border-0 rounded-0 text-center'>
@@ -41,7 +44,7 @@ export default function Operations() {
                                         alt={e.title}
                                     />
                                     <Card.Body>
-                                        <Card.Title className='fs-4 my-2'>
+                                        <Card.Title className='fs-4 mb-2 mx-auto px-4 py-3'>
                                             {e.title}
                                         </Card.Title>
                                         <Card.Text className='px-5 px-md-0 px-xl-5 pt-2'>

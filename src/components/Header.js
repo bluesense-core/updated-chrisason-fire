@@ -75,7 +75,7 @@ export default function Header() {
                                             onClick={handleClose}
                                             to='/operations'
                                             className=''>
-                                            Operations
+                                            Projects
                                         </NavLink>
                                     </Nav.Item>
                                     <Nav.Item>
@@ -86,14 +86,14 @@ export default function Header() {
                                             Products
                                         </NavLink>
                                     </Nav.Item>
-                                    <Nav.Item>
+                                    {/* <Nav.Item>
                                         <NavLink
                                             onClick={handleClose}
                                             to='/media'
                                             className=''>
                                             Media
                                         </NavLink>
-                                    </Nav.Item>
+                                    </Nav.Item>*/}
                                     <Nav.Item>
                                         <NavLink
                                             onClick={handleClose}
