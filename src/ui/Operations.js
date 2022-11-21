@@ -7,49 +7,48 @@ import op3 from '../images/operation-img/op3.png';
 import op4 from '../images/operation-img/op4.png';
 import aside from '../images/operation-img/aside.png';
 import { OpCards } from '../components/Cards';
+import { NavLink } from 'react-router-dom';
 
 export default function Operations() {
     return (
         <main id='operations'>
             <section className='op-hero py-3'>
                 <Container>
-                    <h1 className='text-center display-3'>
-                        Chrisason Projects & Research
+                    <h1 className='text-center  px-4 py-4 m-0 mx-auto'>
+                        Projects
                     </h1>
                 </Container>
             </section>
 
-            <section className='recent-operations text-center py-5'>
+            <section className='recent-operations py-5'>
                 <Container>
-                    <h2 className='title mb-2 text-uppercase'>
+                    <h2 className='title mb-2 text-center text-uppercase'>
                         Fire Protection Projects
                     </h2>
-                    <p className='subtitle px-5'>
+                    <p className='subtitle px-5 text-center'>
                         Chrisason Fire takes great care in ensuring that fire
                         safety operations are carried out efficiently. One of
                         the services used to achieve proper fire safety are fire
                         suppression systems which come in different variations
                     </p>
 
-                    <Row
-                        xs={1}
-                        md={2}
-                        className='pt-5 gx-3 gy-5  align-items-stretch'>
+                    <Row xs={1} md={2} className='pt-5 g-5'>
                         {OpCards.map((e) => (
                             <Col key={e.id}>
-                                <Card className='h-100 border-0 rounded-0 text-center'>
+                                <Card key={e.id} className='h-100'>
                                     <Card.Img
                                         variant='top'
                                         src={e.img}
                                         alt={e.title}
                                     />
-                                    <Card.Body>
-                                        <Card.Title className='fs-4 mb-2 mx-auto px-4 py-3'>
-                                            {e.title}
-                                        </Card.Title>
-                                        <Card.Text className='px-5 px-md-0 px-xl-5 pt-2'>
+                                    <Card.Body className=''>
+                                        <Card.Title>{e.title}</Card.Title>
+                                        <Card.Text className='my-3'>
                                             {e.subtitle}
                                         </Card.Text>
+                                        <NavLink to='/contact'>
+                                            Learn More
+                                        </NavLink>
                                     </Card.Body>
                                 </Card>
                             </Col>

@@ -25,13 +25,13 @@ export default function Contact() {
     return (
         <main id='contact' className='"position-relative'>
             <section className='contact-map "position-relative'>
-                <div className='mapouter'>
-                    <div className='gmap_canvas'>
+                <div class='mapouter'>
+                    <div class='gmap_canvas'>
                         <iframe
                             width='100%'
                             height='300'
                             id='gmap_canvas'
-                            src='https://maps.google.com/maps?q=98%20Ikwerre%20Road.%20Port%20Harcourt.%20Rivers%20State.%20Nigeria.&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                            src='https://maps.google.com/maps?q=12%20Omerelu%20Street.%20GRA%20Phase%20II.%20Port%20Harcourt.%20Rivers%20State.%20Nigeria.&t=&z=13&ie=UTF8&iwloc=&output=embed'
                             frameborder='0'
                             scrolling='no'
                             marginheight='0'
@@ -56,7 +56,7 @@ export default function Contact() {
                                 </strong>
                             </p>
                             <p className='mb-1'>
-                                98 Ikwerre Road. Port Harcourt.
+                                12 Omerelu Street. GRA Phase II. Port Harcourt.
                             </p>
                             <p className='mb-1'>Rivers State. Nigeria.</p>
                             <p className='mb-1'>E: info@chrisasonfire.com</p>

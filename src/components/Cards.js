@@ -1,4 +1,4 @@
-import alarm from '../images/operation-img/alarm.svg';
+import alarm from '../images/operation-img/alarm.png';
 import wckh from '../images/operation-img/wckh.png';
 import bas from '../images/operation-img/bas.png';
 import fss from '../images/operation-img/fss.png';

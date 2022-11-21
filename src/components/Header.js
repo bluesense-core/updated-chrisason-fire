@@ -73,7 +73,7 @@ export default function Header() {
                                     <Nav.Item>
                                         <NavLink
                                             onClick={handleClose}
-                                            to='/operations'
+                                            to='/projects'
                                             className=''>
                                             Projects
                                         </NavLink>
