@@ -14,9 +14,9 @@
 
 #operations .op-hero h1 {
     color: rgb(254, 254, 254);
-    font-weight: 300;
+    font-weight: 500;
     font-family: Lato;
-    background-color: rgb(214, 25, 23);
+
     width: fit-content;
 }
 

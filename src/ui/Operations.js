@@ -14,9 +14,7 @@ export default function Operations() {
         <main id='operations'>
             <section className='op-hero py-3'>
                 <Container>
-                    <h1 className='text-center  px-4 py-4 m-0 mx-auto'>
-                        Projects
-                    </h1>
+                    <h1 className='text-center mx-auto'>Projects</h1>
                 </Container>
             </section>
 
