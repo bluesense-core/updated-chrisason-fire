@@ -12,12 +12,11 @@
     align-items: center;
 }
 
-#operations .op-hero h1 {
+#operations .op-hero h1,
+#operations .op-hero p {
     color: rgb(254, 254, 254);
     font-weight: 500;
     font-family: Lato;
-
-    width: fit-content;
 }
 
 #operations .recent-operations {

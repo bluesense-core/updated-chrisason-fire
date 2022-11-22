@@ -66,7 +66,7 @@ const OpCards = [
         img: Project3,
         title: 'Maintenance Service Levels',
         subtitle:
-            'Our engineers are highly trained to assemble + install fire alarm + fire suppression systems. Alongside our installation, we will offer r inspection, testing + maintenance...',
+            'Our engineers are highly trained to assemble + install fire alarm + fire suppression systems. Alongside our installation, we will offer inspection, testing + maintenance...',
         link: '/',
     },
 ];

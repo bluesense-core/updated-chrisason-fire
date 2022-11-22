@@ -13,8 +13,17 @@ export default function Operations() {
     return (
         <main id='operations'>
             <section className='op-hero py-3'>
-                <Container>
-                    <h1 className='text-center mx-auto'>Projects</h1>
+                <Container className='text-center mx-auto'>
+                    <h1>Projects</h1>
+                    <p>
+                        Chrisason Fire concentrates on offering design,
+                        procurement, installation, commissioning, and servicing
+                        for fire fighting equipment. Our services for training,
+                        counselling, fire building designs, and fire strategy
+                        are of the highest calibre. Our clients actively
+                        participate in the processes because we provide
+                        customised solutions to safety challenges.
+                    </p>
                 </Container>
             </section>
 
