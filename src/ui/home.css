@@ -169,13 +169,7 @@
 
 @media (max-width: 992px) {
     #home .dark-bg .fire-card {
-        width: 29%;
-    }
-}
-
-@media (max-width: 568px) {
-    #home .dark-bg .fire-card {
-        width: 70%;
+        width: 90%;
     }
 }
 

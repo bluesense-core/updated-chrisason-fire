@@ -8,6 +8,8 @@ import Footer5 from '../images/footer-img/foot5.png';
 import Footer6 from '../images/footer-img/foot6.gif';
 import Footer7 from '../images/footer-img/foot7.png';
 import Footer8 from '../images/footer-img/foot8.jfif';
+import TC from '../files/Chrisason Fire - Technical Capabilities .pdf';
+import Profile from '../files/Chrisason Fire Protection Profile - 2022.pdf';
 
 import { Image } from 'react-bootstrap';
 import { FaFacebookF, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
@@ -19,6 +21,17 @@ export default function Footer() {
                 <div className='me-md-5 me-0 mb-md-0 mb-3 text-md-start text-center'>
                     <p>Email: info@chrisasonfire.com</p>
                     <p>Work: +234 806 578 4615</p>
+                    <p className=''>
+                        <a href={TC} target='_blank' rel='noreferrer'>
+                            View Company's Technical Capabilities
+                        </a>
+                    </p>
+
+                    <p className=''>
+                        <a href={Profile} target='_blank' rel='noreferrer'>
+                            View Company Profile
+                        </a>
+                    </p>
                 </div>
 
                 <div className='social-banner d-flex flex-column align-items-center'>

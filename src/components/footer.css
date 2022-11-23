@@ -25,6 +25,18 @@
     margin-bottom: 0;
 }
 
+#footer p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #f2050e;
+    transition: color 500ms;
+}
+
+#footer p a:hover,
+#footer p a:active {
+    color: #c7c2c2;
+}
+
 #footer .logo-banner img {
     width: 8%;
 }
