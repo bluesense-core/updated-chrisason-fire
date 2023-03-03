@@ -28,8 +28,12 @@ export default function Home() {
     return (
         <main id='home'>
             <section className=' home-hero d-flex flex-column align-items-center justify-content-center py-5 px-lg-0 px-3'>
-                <h1 className='mb-0 text-center'>
-                    Over <b>​260,000hours</b> expertising in Fire Engineering
+                <h1 className='mb-2 text-center'>
+                    Over{' '}
+                    <span className='text-decoration-underline'>
+                        ​260,000hours
+                    </span>{' '}
+                    expertising in Fire Engineering
                 </h1>
                 <p className='fs-5 text-center'>
                     Since 1987 we have been providing Africa with easy access to
@@ -56,7 +60,7 @@ export default function Home() {
 
                                 <div className='ms-4'>
                                     <h2 className='h4'>Research & Analysis</h2>
-                                    <p className='lh-sm'>
+                                    <p className=''>
                                         All our projects undergo research and
                                         analysis. Research is what allows our
                                         experts know exactly how to best meet
@@ -75,7 +79,7 @@ export default function Home() {
                                     <h2 className='h4'>
                                         Fire Protection Engines
                                     </h2>
-                                    <p className='lh-sm'>
+                                    <p className=''>
                                         Fire Apparatus & Engines are a must for
                                         any community that is keen on securing
                                         the lives and properties of its people.
@@ -117,7 +121,7 @@ export default function Home() {
                                 <p>3</p>
                             </div>
                             <h5>Supply</h5>
-                            <p className='pt-2 px-2'>
+                            <p className='pt-2'>
                                 Angus Fire UK & Chubb Fire UK are a few of our
                                 longterm partners we liaise with to procure,
                                 refurbish or manufacture to your specifications.{' '}
@@ -129,7 +133,7 @@ export default function Home() {
                                 <p>4</p>
                             </div>
                             <h5>Installation</h5>
-                            <p className='pt-2 px-2'>
+                            <p className='pt-2'>
                                 We have been installing fire alarms, sprinklers,
                                 hosereels, CCTVs and other safety and security
                                 equipment for well over three decades now.{' '}
@@ -139,7 +143,7 @@ export default function Home() {
                 </Container>
             </section>
 
-            <section className='home-clients pb-5'>
+            <section className='home-clients pt-5 pb-5'>
                 <Container>
                     <h4>Some Clients</h4>
                     <div className='d-flex justify-content-between align-items-center'>
@@ -168,9 +172,9 @@ export default function Home() {
 
             <section className='dark-bg'>
                 <Container className='d-flex py-5 flex-md-row flex-column justify-content-between align-items-center'>
-                    <div className='fire-card mb-4'>
+                    <div className='fire-card mb-4 pb-3'>
                         <img src={fireeng} alt='' />
-                        <h4 className='my-2'>Fire Engineering</h4>
+                        <h4 className='my-2 pt-3'>Fire Engineering</h4>
                         <p className='px-2'>
                             {' '}
                             Improving the safety of your employees and assets is
@@ -178,18 +182,18 @@ export default function Home() {
                             critical aspects of your firm
                         </p>
                     </div>
-                    <div className='fire-card mb-4'>
+                    <div className='fire-card mb-4 pb-3'>
                         <img src={marineeng} alt='' />
-                        <h4 className='my-2'>Marine Engineering</h4>
+                        <h4 className='my-2 pt-3'>Marine Engineering</h4>
                         <p className='px-2'>
                             Marine engineering often cost millions to acquire.
                             Which is why it is important companies invest in
                             protecting these assets.
                         </p>
                     </div>
-                    <div className='fire-card mb-4'>
+                    <div className='fire-card mb-4 pb-3'>
                         <img src={fireinstall} alt='' />
-                        <h4 className='my-2'>Fire Installations</h4>
+                        <h4 className='my-2 pt-3'>Fire Installations</h4>
                         <p className='px-2'>
                             We have consulted Shell, NNPC, Mobil, TotalElf and a
                             few other IOCs with fire protection procurement and

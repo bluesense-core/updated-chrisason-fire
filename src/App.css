@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+main {
+    margin-top: 166px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+    main {
+        margin-top: 138px;
+    }
+}

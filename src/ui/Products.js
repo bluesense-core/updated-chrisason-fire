@@ -22,16 +22,25 @@ export default function Products() {
             <section className='pro-hero py-5 text-center'>
                 <div className='pro-div d-flex justify-content-center align-items-center'>
                     <Container className='w-xl-25 w-lg-50'>
-                        <h1 className='mb-0'>Our Products</h1>
-                        <p className='px-xl-2 lh-sm'>
+                        <h1 className='mb-3'>Our Products</h1>
+                        <p className='px-xl-2 '>
                             We have committed our entire existence to quality
                             safety engineering.
+                            <span className='d-md-none d-inline'>
+                                We have a proven track record of over 30years in
+                                the Fire Protection Industry with clients
+                                including Government bodies, International Oil
+                                Companies & professionally certified engineers
+                                that would build and install our British
+                                standard certified products. Ensuring quality
+                                engineering for all our clients.{' '}
+                            </span>
                         </p>
                     </Container>
                 </div>
 
                 <Container>
-                    <p className='bottom'>
+                    <p className='bottom d-md-block d-none'>
                         We have a proven track record of over 30years in the
                         Fire Protection Industry with clients including
                         Government bodies, International Oil Companies &
@@ -45,10 +54,10 @@ export default function Products() {
             <section className='pro-list py-5 text-center'>
                 <Container>
                     <Row className='g-md-5 gy-5'>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro1} alt='' />
                             <h3>Fire Hose</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 We specialise in Angus Hosereels. The world’s
                                 original and best maintenance-free fire hose,
                                 exceeds BS 6391:2009 Type 3 and Kitemarked. A
@@ -56,10 +65,10 @@ export default function Products() {
                                 performance with affordability.
                             </p>
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro2} alt='' />
                             <h3>Water Delivery Hose</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Hi-Vol large-diameter hose offers an efficient
                                 means of delivering critical water supplies
                                 during an emergency when water resources are
@@ -70,10 +79,10 @@ export default function Products() {
                                 abrasion, UV and weathering.
                             </p>
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro3} alt='' />
                             <h3>Fire Fighting Chemicals</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Chrisason Fire only uses Angus Fire foams. Angus
                                 Fire maintains its position at the forefront of
                                 firefighting foam technology through continuous
@@ -84,10 +93,10 @@ export default function Products() {
                             </p>
                         </Col>
 
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro4} alt='' />
                             <h3>Foam Equipment</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Rapid and affordable fire protection for sites
                                 where flammable and hazardous liquids are stored
                                 or processed. Ideal for rapid deployment of foam
@@ -98,10 +107,10 @@ export default function Products() {
                             </p>
                         </Col>
 
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro5} alt='' />
                             <h3>Monitors</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 We have three types of Monitors: Portable,
                                 Mobile & Fixed. Portable: Lightweight monitors
                                 for quick and easy deployment with excellent
@@ -115,10 +124,10 @@ export default function Products() {
                             </p>
                         </Col>
 
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro6} alt='' />
                             <h3>Fire Fittings</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 We have three types of fitting: The Osprey, The
                                 Harrier & The Falcon The Osprey Selectable Flow
                                 Water and Foam Nozzle provides a range of flow
@@ -129,10 +138,10 @@ export default function Products() {
                             </p>
                         </Col>
 
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro7} alt='' />
                             <h3>Portable Pumps</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 We stock a variety of fire pumps ranging from
                                 Diesel: LDA400, LDA600 & LD1800 Petrol: LWA500
                                 MK2, LWA800, AP800, LWA1200 & LW2275 All our
@@ -144,10 +153,10 @@ export default function Products() {
                                 volumes of water continuously.
                             </p>
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro8} alt='' />
                             <h3>Fire Extinguishers</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 We stock two major types of extinguishers:
                                 Portable & Mobile. Portable: Our range of
                                 portable fire extinguishers is BSI Kitemark
@@ -157,10 +166,10 @@ export default function Products() {
                                 industrial applications.
                             </p>
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro9} alt='' />
                             <h3>Fire Engineering Systems</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Our fire system application solutions range
                                 from: Offshore platfroms; Helidecks, helipads,
                                 hangers; Floating production & transport; Docks
@@ -169,10 +178,10 @@ export default function Products() {
                             </p>
                         </Col>
 
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro10} alt='' />
                             <h3>Fire Engines & Choppers</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Getting engines for your city or state needs a
                                 special expertise only very few fire protection
                                 companies can handle. We have supplied a few
@@ -184,10 +193,10 @@ export default function Products() {
                                 help.
                             </p>
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro11} alt='' />
                             <h3>Fire Fighting Gears</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Chrisason Fire has been supplying several
                                 International Oil Companies (IOCs) and
                                 Governmental bodies fire gears for decades. All
@@ -199,10 +208,10 @@ export default function Products() {
                                 mention but a few..
                             </p>
                         </Col>
-                        <Col lg={4} md={6}>
+                        <Col className='sect' lg={4} md={6}>
                             <img src={pro12} alt='' />
                             <h3>& much more..</h3>
-                            <p className='lh-sm'>
+                            <p className=''>
                                 Looked through our website and still cannot find
                                 what you are looking for? Get in touch with our
                                 team. You can find our details on our contact

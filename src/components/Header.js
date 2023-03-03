@@ -14,100 +14,92 @@ export default function Header() {
     const handleActive = (e) => setActive(e);
 
     return (
-        <header
-            id='header'
-            className='bg-white d-flex flex-lg-column flex-row '>
-            <div className='navbar-logo bg-white p-0 d-flex flex-md-row flex-column justify-content-lg-start justify-content-center  align-items-lg-end align-items-center'>
-                <Image src={Logo} className='header-logo' alt='Chrisaon Logo' />
-                <h1 className='mb-lg-4 me-lg-5 pb-lg-2 p-md-0 py-2 m-0 fs-lg-3 fs-5'>
-                    CHRISASON FIRE PROTECTION
-                </h1>
-            </div>
-
-            <hr className='m-0 w-75 mx-auto d-lg-block d-none' />
-            <div className='d-flex justify-content-center'>
-                <Navbar
-                    className='bg-white py-2  d-flex justify-content-center align-items-center'
-                    expand='lg'>
-                    <div>
-                        <Navbar.Toggle
-                            aria-controls='responsive-navbar-nav'
-                            onClick={handleShow}
-                            className='me-2'
+        <header className='py-1 fixed-top bg-white'>
+            <Navbar className='bg-white' expand='lg'>
+                <Container>
+                    <Navbar.Brand href='/' className='p-0 d-flex'>
+                        <Image
+                            src={Logo}
+                            className='header-logo'
+                            alt='Chrisason Logo'
                         />
-                        <Navbar.Offcanvas
-                            id='offcanvas'
-                            show={show}
-                            onHide={handleClose}
-                            placement='start'
-                            className='flex-lg-grow-0'>
-                            <Offcanvas.Header className='py-4' closeButton />
+                    </Navbar.Brand>
 
-                            <Offcanvas.Body>
-                                <Nav
-                                    id='header-nav'
-                                    variant=''
-                                    navbarScroll
-                                    activeKey={active}
-                                    defaultActiveKey={active}
-                                    onSelect={(e) => {
-                                        handleActive(e);
-                                    }}
-                                    className=' d-flex p-0 px-5 pb-1 justify-content-between align-items-center'>
-                                    <Nav.Item>
-                                        <NavLink
-                                            onClick={handleClose}
-                                            to='/'
-                                            className=''>
-                                            Home
-                                        </NavLink>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <NavLink
-                                            onClick={handleClose}
-                                            to='/about'
-                                            className=''>
-                                            Our Company
-                                        </NavLink>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <NavLink
-                                            onClick={handleClose}
-                                            to='/projects'
-                                            className=''>
-                                            Projects
-                                        </NavLink>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <NavLink
-                                            onClick={handleClose}
-                                            to='/products'
-                                            className=''>
-                                            Products
-                                        </NavLink>
-                                    </Nav.Item>
-                                    {/* <Nav.Item>
-                                        <NavLink
-                                            onClick={handleClose}
-                                            to='/media'
-                                            className=''>
-                                            Media
-                                        </NavLink>
-                                    </Nav.Item>*/}
-                                    <Nav.Item>
-                                        <NavLink
-                                            onClick={handleClose}
-                                            to='/contact'
-                                            className=''>
-                                            Contact
-                                        </NavLink>
-                                    </Nav.Item>
-                                </Nav>
-                            </Offcanvas.Body>
-                        </Navbar.Offcanvas>
-                    </div>
-                </Navbar>
-            </div>
+                    <Navbar.Toggle
+                        aria-controls='responsive-navbar-nav'
+                        onClick={handleShow}
+                    />
+                    <Navbar.Offcanvas
+                        id='offcanvas'
+                        show={show}
+                        onHide={handleClose}
+                        placement='end'
+                        className='flex-lg-grow-0'>
+                        <Offcanvas.Header className='py-4' closeButton />
+
+                        <Offcanvas.Body>
+                            <Nav
+                                id='header-nav'
+                                variant='pills'
+                                activeKey={active}
+                                defaultActiveKey={active}
+                                onSelect={(e) => {
+                                    handleActive(e);
+                                }}
+                                className=' text-uppercase justify-content-between align-items-center'>
+                                <Nav.Item className='me-lg-3 mb-lg-0 mb-3'>
+                                    <NavLink
+                                        onClick={handleClose}
+                                        to='/'
+                                        className='py-1 px-3'>
+                                        Home
+                                    </NavLink>
+                                </Nav.Item>
+                                <Nav.Item className='me-lg-3 mb-lg-0 mb-3'>
+                                    <NavLink
+                                        onClick={handleClose}
+                                        to='/about'
+                                        className='py-1 px-3'>
+                                        Our Company
+                                    </NavLink>
+                                </Nav.Item>
+                                {/* <Nav.Item className='me-lg-3 mb-lg-0 mb-3'>
+                        <NavLink
+                            onClick={handleClose}
+                            to='/blog'
+                            className='py-1 px-3'>
+                            Blog
+                        </NavLink>
+                    </Nav.Item> */}
+                                <Nav.Item className='me-lg-3 mb-lg-0 mb-3'>
+                                    <NavLink
+                                        onClick={handleClose}
+                                        to='/projects'
+                                        className='py-1 px-3'>
+                                        Projects
+                                    </NavLink>
+                                </Nav.Item>
+                                <Nav.Item className='me-lg-3 mb-lg-0 mb-3'>
+                                    <NavLink
+                                        onClick={handleClose}
+                                        to='/products'
+                                        className='py-1 px-3'>
+                                        Products
+                                    </NavLink>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <NavLink
+                                        onClick={handleClose}
+                                        to='/contact'
+                                        className='py-1 px-3'>
+                                        Contact
+                                    </NavLink>
+                                </Nav.Item>
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
         </header>
     );
 }

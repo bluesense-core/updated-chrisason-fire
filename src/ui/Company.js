@@ -15,12 +15,12 @@ export default function Company() {
             </section>
 
             <section className='who-we-are py-5'>
-                <Container className='d-flex flex-md-row flex-column justify-content-between align-items-center'>
-                    <img src={logo} alt='' className='mb-3' />
+                <Container className='d-flex flex-md-row flex-column justify-content-between align-items-center py-2'>
+                    {/* <img src={logo} alt='' className='mb-3' /> */}
 
                     <div className='wwa-text'>
-                        <h3 className='mb-3'>WHO WE ARE</h3>
-                        <p>
+                        <h2 className='mb-md-4 mb-2'>Who We Are</h2>
+                        <p className=''>
                             Chrisason Fire is an indigenous Nigerian firm
                             involved in importation, assembling, supply,
                             installation and maintenance of various types of
@@ -28,7 +28,7 @@ export default function Company() {
                             Detection Equipment and Systems throughout the
                             nation.
                         </p>
-                        <p>
+                        <p className=''>
                             We appreciate and associate with the Health, Safety,
                             Environment Security and Fire Prevention efforts of
                             our major clients including but not limited to Mobil
@@ -41,13 +41,13 @@ export default function Company() {
                 </Container>
             </section>
 
-            <section className='about-footer py-5 d-flex justify-content-center align-items-center'>
-                <Container>
-                    <h3 className='mb-5'>MORE ABOUT US:</h3>
+            <section className='about-footer d-flex justify-content-center align-items-center'>
+                <Container className='red-box'>
+                    <h3 className='mb-5'>More About Us:</h3>
                     <div className='d-flex justify-content-between align-items-start flex-md-row flex-column '>
                         <div className='footer-left'>
                             <h5 className='mb-3'>History:</h5>
-                            <p className='lh-sm'>
+                            <p>
                                 Traditionally in the business of importing
                                 security and fire protection equipment and
                                 installations the history of the company dates
@@ -57,7 +57,7 @@ export default function Company() {
                                 Jones (UK) to import fire extinguishers and
                                 security equipment to the country.
                             </p>
-                            <p className='lh-sm'>
+                            <p>
                                 Chrisason quickly grew with the analysis of fire
                                 risks and study of the required protection,
                                 followed by engineering, installation, tests and
@@ -67,9 +67,9 @@ export default function Company() {
                             </p>
                         </div>
 
-                        <div className='footer-right'>
+                        <div className='footer-right mt-md-0 mt-5'>
                             <h5 className='mb-3'>Our latest breakthrough:</h5>
-                            <p className='lh-sm'>
+                            <p>
                                 Today Chrisason Fire leads the nation providing
                                 first class fire protection and security
                                 equipment to State Governments, International
@@ -79,7 +79,7 @@ export default function Company() {
                                 quality service that has helped us build a
                                 formidable client base.
                             </p>
-                            <p className='lh-sm'>
+                            <p>
                                 Through our three decades of expertising in the
                                 safety industry, we have affiliation with major
                                 Security and fire equipment manufacturers

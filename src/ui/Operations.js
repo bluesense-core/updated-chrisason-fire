@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom';
 export default function Operations() {
     return (
         <main id='operations'>
-            <section className='op-hero py-3'>
+            <section className='op-hero'>
                 <Container className='text-center mx-auto'>
                     <h1>Projects</h1>
                     <p>
@@ -29,19 +29,24 @@ export default function Operations() {
 
             <section className='recent-operations py-5'>
                 <Container>
-                    <h2 className='title mb-2 text-center text-uppercase'>
+                    <h2 className='title mb-2 text-center'>
                         Fire Protection Projects
                     </h2>
-                    <p className='subtitle px-5 text-center'>
+                    <p className='subtitle px-md-5 fs-5 text-center'>
                         Chrisason Fire takes great care in ensuring that fire
                         safety operations are carried out efficiently. One of
                         the services used to achieve proper fire safety are fire
                         suppression systems which come in different variations
                     </p>
 
-                    <Row xs={1} md={2} className='pt-5 g-5'>
+                    <Row
+                        xs={1}
+                        md={2}
+                        className='pt-5 gx-md-5 gy-5 justify-content-center'>
                         {OpCards.map((e) => (
-                            <Col key={e.id}>
+                            <Col
+                                key={e.id}
+                                className='d-flex justify-content-center'>
                                 <Card key={e.id} className='h-100'>
                                     <Card.Img
                                         variant='top'
@@ -66,7 +71,7 @@ export default function Operations() {
 
             <Container className='d-flex flex-lg-row flex-column justify-content-between py-5'>
                 <section className='operation'>
-                    <h2 className='text-center'>OTHER SERVICES WE PROVIDE</h2>
+                    <h2 className='text-center'>Other Services We Provide</h2>
 
                     <div className='d-flex pt-4 flex-md-row flex-column justify-content-between align-items-stretch'>
                         <div className='op'>

@@ -1,8 +1,12 @@
+#operations {
+    font-family: Poppins;
+}
+
 #operations .op-hero {
-    height: 350px;
-    background: #7c7c7c url(../images/operation-img/hero.jpg);
+    padding: 6em 0;
+    background: #7c7c7c url(../images/operation-img/hero1.png);
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: cover;
     background-blend-mode: multiply;
     background-position-y: center;
     background-position-x: center;
@@ -15,8 +19,16 @@
 #operations .op-hero h1,
 #operations .op-hero p {
     color: rgb(254, 254, 254);
-    font-weight: 500;
-    font-family: Lato;
+    letter-spacing: 0.00635em;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#operations .op-hero h1 {
+    font-weight: 700;
+}
+
+#operations .op-hero p {
+    line-height: 1.6;
 }
 
 #operations .recent-operations {
@@ -24,12 +36,10 @@
 }
 
 #operations .recent-operations p {
-    font-family: 'Lato';
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #operations .recent-operations h2 {
-    font-family: 'Open Sans';
     font-weight: 700;
     color: #af2c2b;
 }
@@ -89,14 +99,13 @@
 }
 
 #operations .operation h2 {
-    font-family: 'Lato';
     font-weight: 700;
-    color: #b3b2b2;
+    color: #af2c2b;
 }
 
 #operations aside {
     width: 30%;
-    background-color: rgb(201, 201, 201);
+    background-color: rgba(175, 44, 43);
     color: #fefefe;
 }
 
@@ -112,22 +121,23 @@
 }
 
 #operations .operation .op h3 {
-    color: rgb(102, 102, 102);
-    font-family: 'Open Sans';
-    font-weight: 500;
+    color: #af2c2b;
+    /* font-family: 'Open Sans'; */
+    font-weight: 600;
 }
 
 #operations .operation .op .category {
     color: #fefefe;
-    font-family: 'Open Sans';
-    background-color: rgb(153, 153, 153);
+    /* font-family: 'Open Sans'; */
+    background-color: rgb(102, 102, 102);
     border-radius: 4px;
+    font-weight: 500;
     width: fit-content;
 }
 
 #operations .operation .op p {
     color: rgb(102, 102, 102);
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
 }
 
 #operations aside img {
