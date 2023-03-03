@@ -1,16 +1,8 @@
 import React, { useState } from 'react';
-import {
-    Container,
-    Col,
-    FloatingLabel,
-    Form,
-    Row,
-    Button,
-} from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import './contact.css';
 import ContactImg from '../images/contact-img.png';
-import { FaCaretRight, FaTelegram, FaTelegramPlane } from 'react-icons/fa';
 export default function Contact() {
     const [validated, setValidated] = useState(false);
 
@@ -163,7 +155,11 @@ export default function Contact() {
 
                     <div className='contact-form pb-3 d-flex flex-lg-row flex-column justify-content-between mt-4'>
                         <div className='contact-info'>
-                            <img src={ContactImg} className='contact-img' />
+                            <img
+                                src={ContactImg}
+                                className='contact-img'
+                                alt=''
+                            />
 
                             <div className='contact-details p-5'>
                                 <div className='d-flex justify-content-start pb-1'>

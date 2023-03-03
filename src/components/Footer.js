@@ -1,27 +1,20 @@
 import React from 'react';
 import './footer.css';
-import Logo from '../images/download.png';
+// import Logo from '../images/download.png';
 
-import Footer1 from '../images/footer-img/foot1.png';
-import Footer2 from '../images/footer-img/foot2.jfif';
-import Footer3 from '../images/footer-img/foot3.jfif';
-import Footer4 from '../images/footer-img/foot4.jfif';
-import Footer5 from '../images/footer-img/foot5.png';
-import Footer6 from '../images/footer-img/foot6.gif';
-import Footer7 from '../images/footer-img/foot7.png';
-import Footer8 from '../images/footer-img/foot8.jfif';
+// import Footer1 from '../images/footer-img/foot1.png';
+// import Footer2 from '../images/footer-img/foot2.jfif';
+// import Footer3 from '../images/footer-img/foot3.jfif';
+// import Footer4 from '../images/footer-img/foot4.jfif';
+// import Footer5 from '../images/footer-img/foot5.png';
+// import Footer6 from '../images/footer-img/foot6.gif';
+// import Footer7 from '../images/footer-img/foot7.png';
+// import Footer8 from '../images/footer-img/foot8.jfif';
 import TC from '../files/Chrisason Fire - Technical Capabilities .pdf';
 import Profile from '../files/Chrisason Fire Protection Profile - 2022.pdf';
 
-import { Container, Image, Nav, Navbar } from 'react-bootstrap';
-import {
-    FaFacebookF,
-    FaFacebookSquare,
-    FaLinkedin,
-    FaTwitter,
-    FaTwitterSquare,
-    FaYoutube,
-} from 'react-icons/fa';
+import { Container, Nav } from 'react-bootstrap';
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 export default function Footer() {

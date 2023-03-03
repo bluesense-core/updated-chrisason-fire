@@ -1,7 +1,7 @@
 import React from 'react';
 import './company.css';
 import { Container } from 'react-bootstrap';
-import logo from '../images/about-img/download.png';
+// import logo from '../images/about-img/download.png';
 
 export default function Company() {
     return (

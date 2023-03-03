@@ -1,6 +1,6 @@
 import React from 'react';
 import './operations.css';
-import { Col, Container, Image, Row, Card } from 'react-bootstrap';
+import { Col, Container, Row, Card } from 'react-bootstrap';
 import op1 from '../images/operation-img/op1.png';
 import op2 from '../images/operation-img/op2.png';
 import op3 from '../images/operation-img/op3.png';
