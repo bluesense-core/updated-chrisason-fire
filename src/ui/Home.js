@@ -51,7 +51,7 @@ export default function Home() {
                         />
 
                         <div className='service1-details'>
-                            <div className='d-flex justify-content-center align-items-start'>
+                            <div className='d-flex flex-sm-row flex-column justify-content-center align-items-sm-start align-items-center'>
                                 <img
                                     src={img2}
                                     alt=''
@@ -68,7 +68,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='d-flex justify-content-center align-items-start mt-4'>
+                            <div className='d-flex flex-sm-row flex-column justify-content-center align-items-sm-start align-items-center mt-4'>
                                 <img
                                     src={img3}
                                     alt=''
@@ -91,7 +91,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className='text-center py-5 service2 d-flex flex-md-row flex-column justify-content-between align-items-start'>
+                    <div className='text-center py-5 service2 d-flex flex-lg-row flex-column justify-content-between align-items-start'>
                         <div className='service'>
                             <div className='grey-circle mb-3'>
                                 <p>1</p>
@@ -171,7 +171,7 @@ export default function Home() {
             </section>
 
             <section className='dark-bg'>
-                <Container className='d-flex py-5 flex-md-row flex-column justify-content-between align-items-center'>
+                <Container className='d-flex py-5 flex-lg-row flex-column justify-content-between align-items-center'>
                     <div className='fire-card mb-4 pb-3'>
                         <img src={fireeng} alt='' />
                         <h4 className='my-2 pt-3'>Fire Engineering</h4>

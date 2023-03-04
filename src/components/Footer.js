@@ -103,7 +103,7 @@ export default function Footer() {
                         </p>
 
                         <p className='copyright my-1 d-sm-block d-none'>
-                            © 1987 - 2022. Chrisason Fire Protection LTD. All
+                            © 1987 - 2023. Chrisason Fire Protection LTD. All
                             Rights Reserved.
                         </p>
                     </div>
@@ -163,7 +163,8 @@ export default function Footer() {
                         </Nav>
 
                         <p className='copyright my-4 d-sm-none d-block text-center'>
-                            © RedSense | All rights reserved.
+                            © 1987 - 2023. Chrisason Fire Protection LTD. All
+                            Rights Reserved.
                         </p>
                     </div>
                 </div>

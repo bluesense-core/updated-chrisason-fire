@@ -21,7 +21,6 @@
 }
 
 #home .home-hero p {
-    padding: 0 12em;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.555);
 }
 
@@ -33,6 +32,12 @@
 
 #home .service1 .service-img {
     width: 35%;
+}
+@media (max-width: 575px) {
+    #home .service1 .service-img {
+        width: 100%;
+        margin-bottom: 1em;
+    }
 }
 
 #home .service1 h2 {

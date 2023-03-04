@@ -15,8 +15,56 @@ import pro11 from '../images/product-img/pro11.png';
 import pro12 from '../images/product-img/pro12.png';
 import circle1 from '../images/product-img/circle1.png';
 import circle2 from '../images/product-img/circle2.png';
+import Chart from 'react-apexcharts';
 
 export default function Products() {
+    var chartDetails = {
+        options: {
+            colors: ['#af2c2b'],
+
+            chart: {
+                height: 500,
+            },
+
+            plotOptions: {
+                radialBar: {
+                    hollow: {
+                        margin: 0,
+                        size: '66%',
+                    },
+
+                    track: {
+                        show: true,
+                        background: '#af2b2b38',
+                    },
+
+                    dataLabels: {
+                        showOn: 'always',
+                        name: {
+                            show: false,
+                        },
+                        value: {
+                            show: true,
+                            color: '#000',
+                            fontSize: '24px',
+                            fontWeight: 400,
+                            fontFamily: 'Poppins',
+                            offsetY: 10,
+                        },
+                    },
+                },
+            },
+
+            stroke: {
+                lineCap: 'round',
+            },
+        },
+
+        series1: [83],
+        series2: [67],
+        series3: [90],
+    };
+
     return (
         <main id='products'>
             <section className='pro-hero py-5 text-center'>
@@ -268,29 +316,39 @@ export default function Products() {
                         </div>
                     </div>
 
-                    <div className='fab-sect2 pt-lg-5 pt-0 pb-3 d-flex  justify-content-around align-items-stretch flex-md-nowrap flex-wrap'>
-                        <div className='fab-detail'>
-                            <p>Frequent Clients</p>
-                            <div className='red-circle clients'>83%</div>
-                        </div>
+                    <Row className='fab-detail mt-5 justify-content-between'>
+                        <Col md={4} lg={3}>
+                            <h3 className='text-center h4'>Frequent Clients</h3>
+                            <Chart
+                                options={chartDetails.options}
+                                series={chartDetails.series1}
+                                type='radialBar'
+                                width='100%'
+                            />
+                        </Col>
 
-                        <div className='fab-detail '>
-                            <p>Key Global Partners</p>
-                            <div className='red-circle partners'>67%</div>
-                        </div>
+                        <Col md={4} lg={3}>
+                            <h3 className='text-center h4'>
+                                Key Global Partners
+                            </h3>
+                            <Chart
+                                options={chartDetails.options}
+                                series={chartDetails.series2}
+                                type='radialBar'
+                                width='100%'
+                            />
+                        </Col>
 
-                        <div className='fab-detail m-md-0 mt-4'>
-                            <p>Referrals</p>
-                            <div className='red-circle referrals'>90%</div>
-                        </div>
-
-                        <div className='fab-detail m-md-0 mt-4'>
-                            <p>Major Complaints</p>
-                            <div className='red-circle complaints'>
-                                <strong>5%</strong>
-                            </div>
-                        </div>
-                    </div>
+                        <Col md={4} lg={3}>
+                            <h3 className='text-center h4'>Referrals</h3>
+                            <Chart
+                                options={chartDetails.options}
+                                series={chartDetails.series3}
+                                type='radialBar'
+                                width='100%'
+                            />
+                        </Col>
+                    </Row>
                 </Container>
             </section>
         </main>

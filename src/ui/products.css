@@ -67,7 +67,7 @@
 
 #products .pro-list h3 {
     font-weight: 700;
-    color: #af2c2b;
+    color: #af2b2b;
     padding: 0.5em 0;
     margin: 0;
 }
@@ -162,54 +162,10 @@
     }
 }
 
-#products .fab-detail {
-    text-align: center;
+#products .fab-detail h3 {
+    /* text-align: center;
     color: rgb(51, 51, 51);
     line-height: 1.2;
     font-size: 20px;
-    font-family: 'Open Sans';
-}
-
-#products .fab-detail .red-circle {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border: 10px solid #000;
-    border-radius: 50%;
-    box-shadow: rgb(204 156 56 / 19%) 3px 3px 6px 0px;
-}
-
-#products .fab-detail .clients {
-    border-color: rgb(216, 57, 75);
-}
-
-#products .fab-detail .partners {
-    border-color: rgb(204, 53, 52);
-}
-
-#products .fab-detail .referrals {
-    border-color: rgb(236, 22, 51);
-}
-
-#products .fab-detail .complaints {
-    border-color: rgb(212, 183, 185);
-}
-
-#products .fab-detail strong {
-    font-weight: 700;
-}
-
-@media (max-width: 992px) {
-    #products .fab-detail {
-        width: 20%;
-    }
-}
-
-@media (max-width: 568px) {
-    #products .fab-detail {
-        width: 50%;
-    }
+    font-family: 'Open Sans'; */
 }

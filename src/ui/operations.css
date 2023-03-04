@@ -146,10 +146,6 @@
     object-fit: cover;
 }
 
-#operations aside p {
-    font-family: 'Open Sans';
-}
-
 @media (max-width: 992px) {
     #operations .operation,
     #operations aside {
