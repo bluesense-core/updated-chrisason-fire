@@ -21,22 +21,49 @@ export default function Company() {
                     <div className='wwa-text'>
                         <h2 className='mb-md-4 mb-2'>Who We Are</h2>
                         <p className=''>
-                            Chrisason Fire is an indigenous Nigerian firm
-                            involved in importation, assembling, supply,
-                            installation and maintenance of various types of
-                            Fire Protection, Fire Fighting, Engineering, Fire
-                            Detection Equipment and Systems throughout the
-                            nation.
+                            Founded in 1987, Chrisason Fire Protection is one of
+                            the country’s leading Fire Protection Engineering
+                            companies. We take pride in providing safety
+                            solutions and simplifying operational challenges for
+                            our clients in public and private sectors across the
+                            country + continent. At Chrisason Fire, we
+                            understand that no two company problems are the
+                            same, we help each of our clients’ design safety
+                            solutions tailored specifically to meet their asset
+                            needs. Our vast industry and engineering expertise,
+                            including safety partners across the globe,
+                            emergency technology, and robust installation and
+                            commissioning expertise, allows us to address
+                            problems in the continent, in unique ways that no
+                            one else can.
                         </p>
+                        <br />
                         <p className=''>
-                            We appreciate and associate with the Health, Safety,
-                            Environment Security and Fire Prevention efforts of
-                            our major clients including but not limited to Mobil
-                            Producing Nigeria Unlimited, Shell Petroleum
-                            Development Company of Nigeria Limited, NNPC, EPCL
-                            (INDORAMA), Notore Chemical Industries (NAFFCON)
-                            etc.
+                            We design, supply, install, commission and service -
+                            Fire Fighting Equipment, such as, Fire
+                            Extinguishers, Fire Trucks, Fire Hose Reel, Fire
+                            Fighting Foam & Powders, Foam, Equipment Sprinkler
+                            System, CO2 Total Flooding Systems, Fire Detection
+                            System (Smoke, Heat, Flame, Explosion Sensors), Fire
+                            Hydrant Equipment, FM 200, Argon, Inergen, Fog
+                            Water, Fire Fighting Systems, Dry Powder, Fire
+                            Fighting Systems, Portable and Trolley units.
                         </p>
+                        <br />
+                        {/* <p>
+                            We provide fire consultation, fire building designs,
+                            fire strategy, and training services of the highest
+                            quality to help you build stronger teams, install
+                            and commission - UL listed fire equipment. Our
+                            clients are fully involved in the processes since we
+                            provide personalised solutions to safety problems.
+                            Some of our major clients including but not limited
+                            to TOTAL Energy, Exxon Mobil, Shell Petroleum
+                            Development Company, NNPC, Indorama (EPLC), Notore
+                            Chemical Industries (NAFFCON), A few Federal Fire
+                            Services, Rivers State Government, Akwa Ibom State
+                            Government, etc.
+                        </p> */}
                     </div>
                 </Container>
             </section>
