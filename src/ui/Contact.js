@@ -1,19 +1,41 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import './contact.css';
 import ContactImg from '../images/contact-img.png';
+import emailjs from '@emailjs/browser';
+
 export default function Contact() {
     const [validated, setValidated] = useState(false);
+    const formRef = useRef();
 
     const handleSubmit = (event) => {
+        event.preventDefault();
+
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
-            event.preventDefault();
             event.stopPropagation();
+        } else {
+            emailjs
+                .sendForm(
+                    'service_ndabn9g',
+                    'template_akjd8y5',
+                    formRef.current,
+                    'gFB4e8ztMi_R91bw4'
+                )
+
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                    },
+                    (error) => {
+                        console.log(error.text);
+                    }
+                );
         }
 
         setValidated(true);
+        formRef.current.reset();
     };
     return (
         // <main id='contact' className='"position-relative'>
@@ -204,6 +226,7 @@ export default function Contact() {
                         </div>
 
                         <Form
+                            ref={formRef}
                             noValidate
                             validated={validated}
                             onSubmit={handleSubmit}
@@ -214,6 +237,7 @@ export default function Contact() {
                                     type='text'
                                     className='py-2'
                                     required
+                                    name='name'
                                 />
                             </Form.Group>
                             <Form.Group className='mb-3'>
@@ -223,6 +247,7 @@ export default function Contact() {
                                     type='email'
                                     className='py-2'
                                     required
+                                    name='email'
                                 />
                             </Form.Group>
 
@@ -233,12 +258,18 @@ export default function Contact() {
                                     type='tel'
                                     className='py-2'
                                     required
+                                    name='phone'
                                 />
                             </Form.Group>
 
                             <Form.Group className='mb-3'>
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as='textarea' rows={5} required />
+                                <Form.Control
+                                    as='textarea'
+                                    rows={5}
+                                    required
+                                    name='message'
+                                />
                             </Form.Group>
 
                             <Button
