@@ -91,7 +91,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className='text-center py-5 service2 d-flex flex-lg-row flex-column justify-content-between align-items-start'>
+                    <div className='text-center py-5 service2 d-flex flex-md-row flex-column justify-content-between align-items-start'>
                         <div className='service'>
                             <div className='grey-circle mb-3'>
                                 <p>1</p>

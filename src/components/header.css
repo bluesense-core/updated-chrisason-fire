@@ -58,6 +58,7 @@ header .navbar-toggler:focus {
 
         background-color: #af2c2b;
         transition: 900ms;
+        overflow-y: scroll;
     }
 
     #header-nav a {
@@ -78,4 +79,89 @@ header .navbar-toggler:focus {
     .btn-close {
         opacity: 1;
     }
+}
+
+@media (min-width: 991px) {
+    .offcanvas-backdrop.show {
+        display: none;
+    }
+}
+
+/* Footer */
+
+/* #footer {
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+#footer .social-banner a {
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: #c7c2c2;
+    color: #fff;
+    transition: 0.5s;
+}
+#footer .social-banner a:hover {
+    background-color: #f2050e;
+}
+
+#footer .social-icon {
+    font-size: 1.5rem;
+}
+
+#footer p {
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#footer p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #f2050e;
+    transition: color 500ms;
+}
+
+#footer p a:hover,
+#footer p a:active {
+    color: #c7c2c2;
+} */
+
+/* Footer */
+.offcanvas-body footer {
+    background-color: transparent;
+    font-family: 'gill-sans-mt', sans-serif;
+    font-family: Poppins;
+    font-weight: 400;
+    border: none;
+}
+
+.offcanvas-body .details a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: color 500ms;
+}
+
+.offcanvas-body footer .details a:hover,
+.offcanvas-body footer .details a:active {
+    color: #000;
+}
+.social-links {
+    height: 95.4px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icon {
+    font-size: 2rem;
+}
+
+.offcanvas-body footer,
+.offcanvas-body .copyright {
+    font-size: 14px;
 }
