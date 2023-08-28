@@ -6,6 +6,10 @@ import Project1 from '../images/operation-img/project-1.webp';
 import Project3 from '../images/operation-img/project-3.webp';
 import Project5 from '../images/operation-img/project-5.webp';
 import Project6 from '../images/operation-img/project-6.webp';
+import oilspill from '../images/operation-img/oilspill.jpg';
+import fireproof from '../images/operation-img/fireproof.jpg';
+import ppe from '../images/operation-img/ppe.jpg';
+import offshore from '../images/operation-img/offshore.jpg';
 
 const OpCards = [
     {
@@ -67,6 +71,42 @@ const OpCards = [
         title: 'Maintenance Service Levels',
         subtitle:
             'Our engineers are highly trained to assemble + install fire alarm + fire suppression systems. Alongside our installation, we will offer inspection, testing + maintenance...',
+        link: '/',
+    },
+
+    {
+        id: 9,
+        img: oilspill,
+        title: 'Oil Spillage Clean up',
+        subtitle:
+            'Our expert teams are extensively trained in swift and efficient oil spillage cleanup operations. Alongside our cleanup expertise, we offer thorough inspection, advanced techniques...',
+        link: '/',
+    },
+
+    {
+        id: 10,
+        img: fireproof,
+        title: 'Fireproofing',
+        subtitle:
+            'We specialize in top-tier fireproofing solutions. Our seasoned professionals are adept at applying state-of-the-art fire-resistant coatings and materials....',
+        link: '/',
+    },
+
+    {
+        id: 11,
+        img: ppe,
+        title: 'Specialised Fire / PPE Procurement (Arc Flash, Anti-Static & Fire Retardant, Skid-mounted Fire Pump)',
+        subtitle:
+            'We excel in the procurement of specialized fire and personal protective equipment (PPE). From arc flash gear and anti-static apparel to fire retardant solutions and skid-mounted fire pumps....',
+        link: '/',
+    },
+
+    {
+        id: 12,
+        img: offshore,
+        title: 'Offshore Fire Protection',
+        subtitle:
+            'We are your trusted partner in offshore fire protection solutions. With a deep understanding of the unique challenges posed by offshore environments, we offer specialized fire prevention, detection, and response systems.',
         link: '/',
     },
 ];
