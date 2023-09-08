@@ -186,7 +186,7 @@ export default function Contact() {
                             <div className='contact-details p-5'>
                                 <div className='d-flex justify-content-start pb-1'>
                                     <FaMapMarkerAlt className='contact-icon me-3' />
-                                    <p className='contact-text'>
+                                    <p className='contact-text mb-4'>
                                         HQ: Chrisason Fire Protection Limited.
                                         <br />
                                         12 Omerelu Street. GRA Phase II.
@@ -194,6 +194,14 @@ export default function Contact() {
                                         Port Harcourt, Rivers State.
                                         <br />
                                         Nigeria.
+                                        <br />
+                                        <br />
+                                        Lagos: 46 Raymond Njoku Street. Ikoyi.
+                                        Lagos. Lagos State
+                                        <br />
+                                        <br />
+                                        Abuja: 305B Hillside Building. Yakubu
+                                        Gowon Way. Asokoro. Abuja FCT.
                                     </p>
                                 </div>
 
