@@ -6,6 +6,7 @@ import { Container, Image, Navbar, Offcanvas, Nav } from 'react-bootstrap';
 import TC from '../files/Chrisason Fire - Technical Capabilities .pdf';
 import Profile from '../files/Chrisason Fire Protection Profile - 2022.pdf';
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 export default function Header() {
     const [show, setShow] = useState(false);
@@ -186,10 +187,10 @@ export default function Header() {
                                                 </a>
 
                                                 <a
-                                                    href='https://twitter.com/chrisasonfire'
+                                                    href='https://x.com/chrisasonfire'
                                                     target='_blank'
                                                     rel='noopener noreferrer'>
-                                                    <FaTwitterSquare className='social-icon me-sm-3 mx-3' />{' '}
+                                                    <FaSquareXTwitter className='social-icon me-sm-3 mx-3' />{' '}
                                                 </a>
 
                                                 <a

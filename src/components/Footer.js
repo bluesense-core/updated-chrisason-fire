@@ -16,6 +16,7 @@ import Profile from '../files/Chrisason Fire Protection Profile - 2022.pdf';
 import { Container, Nav } from 'react-bootstrap';
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
     return (
@@ -118,10 +119,10 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href='https://twitter.com/chrisasonfire'
+                                href='https://x.com/chrisasonfire'
                                 target='_blank'
                                 rel='noopener noreferrer'>
-                                <FaTwitterSquare className='social-icon me-sm-3 mx-3' />{' '}
+                                <FaSquareXTwitter className='social-icon me-sm-3 mx-3' />{' '}
                             </a>
 
                             <a

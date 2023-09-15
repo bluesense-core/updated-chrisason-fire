@@ -152,7 +152,10 @@ header .navbar-toggler:focus {
     height: 95.4px;
 }
 
-.social-links a {
+.social-links a,
+.social-links a:hover,
+.social-links a:focus,
+.social-links a:active {
     text-decoration: none;
     color: #fff;
 }
