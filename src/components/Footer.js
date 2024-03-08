@@ -19,6 +19,7 @@ import { NavLink } from 'react-router-dom';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
+    const date = new Date()
     return (
         // <footer id='footer' className=''>
         //     <section className='white-banner bg-white py-4 px-4 d-flex flex-md-row flex-column justify-content-center align-items-md-end align-items-center'>
@@ -164,7 +165,7 @@ export default function Footer() {
                         </Nav>
 
                         <p className='copyright my-4 d-sm-none d-block text-center'>
-                            © 1987 - 2023. Chrisason Fire Protection LTD. All
+                            © 1987 - {date.getFullYear()}. Chrisason Fire Protection LTD. All
                             Rights Reserved.
                         </p>
                     </div>
