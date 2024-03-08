@@ -15,6 +15,7 @@ import { Image } from 'react-bootstrap';
 import { FaFacebookF, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export default function Footer() {
+    const date = new Date()
     return (
         <footer id='footer' className=''>
             <section className='white-banner bg-white py-4 px-4 d-flex flex-md-row flex-column justify-content-center align-items-md-end align-items-center'>
@@ -60,7 +61,7 @@ export default function Footer() {
                     </div>
 
                     <p className='text-center'>
-                        © 1987 - 2022. Chrisason Fire Protection LTD. All Rights
+                        © 1987 - {date.getFullYear()}. Chrisason Fire Protection LTD. All Rights
                         Reserved.
                     </p>
                 </div>
