@@ -15,6 +15,7 @@ import pro11 from '../images/product-img/pro11.png';
 import pro12 from '../images/product-img/pro12.png';
 import circle1 from '../images/product-img/circle1.png';
 import circle2 from '../images/product-img/circle2.png';
+import fire from '../images/product-img/fireimg.png';
 import Chart from 'react-apexcharts';
 
 export default function Products() {
@@ -278,16 +279,11 @@ export default function Products() {
             <section className='fabrication py-5 '>
                 <Container>
                     <div className='fab-sect1 pb-5  d-flex flex-lg-row flex-column justify-content-center align-items-center'>
-                        <div className='fab-circles m-lg-0 mb-4 position-relative '>
+                        <div className='fab-circles m-lg-0 mb-4 position-relative'>
                             <img
-                                src={circle1}
+                                src={fire}
                                 alt=''
-                                className='circle1 circle'
-                            />
-                            <img
-                                src={circle2}
-                                alt=''
-                                className='circle2 circle'
+                                className='fire'
                             />
                         </div>
 

@@ -112,6 +112,15 @@
     z-index: 1000;
 }
 
+#products .fire {
+    width: 420px;
+    height: auto;
+    margin: auto;
+    border: 12px solid #ffff;
+    position: relative;
+    /* z-index: 1000; */
+}
+
 #products .circle2 {
     width: 260px;
     height: 260px;
@@ -159,6 +168,12 @@
         width: 160px;
         height: 160px;
         left: 40%;
+    }
+
+    #products .fire {
+        width: 260px;
+        height: 200px;
+        left: 15%;
     }
 }
 
